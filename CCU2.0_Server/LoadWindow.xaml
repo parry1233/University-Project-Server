@@ -1,0 +1,25 @@
+﻿<Window x:Class="CCU2._0_Server.LoadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CCU2._0_Server"
+		xmlns:gif="http://wpfanimatedgif.codeplex.com"
+		mc:Ignorable="d"
+		Icon="Icon/igo_white.png"
+        Title="Loading" Height="140.494" Width="274.697" Loaded="Window_Loaded" ContentRendered="Window_ContentRendered"
+		WindowStyle="None"
+		WindowStartupLocation="CenterScreen" Background="{x:Null}">
+	<!-- The line above is the reference to use .gif -->
+
+	<Grid Background="#FF26282B">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition Width="0*"/>
+		</Grid.ColumnDefinitions>
+		<ProgressBar Name="ConnectProgress" HorizontalAlignment="Left" Height="12" Margin="10,107,0,0" VerticalAlignment="Top" Width="248" ValueChanged="ConnectProgress_ValueChanged" Foreground="#FF77AAAD" Background="{x:Null}"/>
+		<Label Name="PercentLabel" Content="0%" HorizontalAlignment="Left" Margin="219,73,0,0" VerticalAlignment="Top" Foreground="White"/>
+		<Image gif:ImageBehavior.AnimatedSource="GIF/ellipsis_loading.gif" Name="loadingGIF" HorizontalAlignment="Center" VerticalAlignment="Center" Height="92" Margin="90,7,86,35.4" Width="92"/>
+
+	</Grid>
+</Window>
