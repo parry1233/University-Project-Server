@@ -131,7 +131,7 @@ namespace CCU2._0_Server
 		{
 			try
 			{
-				string ip = "192.168.1.106";
+				string ip = "192.168.100.106";
 				string port = "13000";
 				//建立套接字
 				TcpClient tcpClient = new TcpClient();
